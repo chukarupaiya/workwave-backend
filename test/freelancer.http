@@ -1,0 +1,55 @@
+@API_URL = http://localhost:3001/freelancer
+
+
+###checked
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+   
+{        
+    "email":"freelancer1@gmail.com",
+    "aadhar":"1234567890",
+    "phone":"1234567890" ,
+    "name":"freelancer1" ,
+    "github":"www.github.com" ,
+    "linkedin":"www.linkedin.com" ,
+    "skills":"[java,c++,c]"
+}
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"1",
+    "aadhar":"1",
+    "phone":"1" ,
+    "name":"1" ,
+    "github":"1" ,
+    "linkedin":"1" ,
+    "skills":"[1]"
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"freelancer1@gmail.com",
+    "aadhar":"1234567890",
+    "phone":"1234567890" ,
+    "name":"freelancer1" ,
+    "github":"www.github.com" ,
+    "linkedin":"www.linkedin.com" ,
+    "skills":"[java,c++,c]"
+}

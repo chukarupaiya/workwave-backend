@@ -1,0 +1,58 @@
+@API_URL = http://localhost:3001/project
+
+
+###checked
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+{        
+    "title":"title1",
+    "description":"description1",
+    "required_skills":"[java,c++,c]", 
+    "budget":"1500",
+    "deadline":"15th jan 2024",  
+    "company_id":"1",
+    "freelancer_ids":"[1,2,3,4]",
+    "status":"applied"
+}
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "title":"1",
+    "description":"1",
+    "required_skills":"[1]", 
+    "budget":"1",
+    "deadline":"1",  
+    "company_id":"1",
+    "freelancer_ids":"[1]",
+    "status":"1"
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "title":"title1",
+    "description":"description1",
+    "required_skills":"[java,c++,c]", 
+    "budget":"1500",
+    "deadline":"15th jan 2024",  
+    "company_id":"1",
+    "freelancer_ids":"[1,2,3,4]",
+    "status":"applied"
+}

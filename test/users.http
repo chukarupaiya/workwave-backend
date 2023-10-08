@@ -1,0 +1,44 @@
+@API_URL = http://localhost:3001/users 
+
+
+###checked
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+{        
+    "email":"user1@gmail.com",
+    "password":"user1@gmail.com",
+    "type":"1" 
+}
+
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"1",
+    "password":"1",
+    "type":"10" 
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"user1@gmail.com",
+    "password":"user1@gmail.com",
+    "type":"1" 
+}

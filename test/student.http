@@ -1,0 +1,68 @@
+@API_URL = http://localhost:3001/student 
+
+
+###checked
+###
+POST  {{API_URL}}/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFhYWFAZ21haWwuY29tIiwiUG9zaXRpb24iOjAsImlkIjozLCJpYXQiOjE2NTc0MzE5ODIsImV4cCI6MTY1NzU3NTk4Mn0.RxOimoPGvPezwTnHH-WKpmQrPKqoZiX6nN_-rGb7BNU
+Content-Type: application/json
+
+{        
+    "id":1,
+    "Name":"aaaa",
+    "quantity":5,
+    "dis":"aaaaaaaaaa",
+    "rating":4,
+    "Price":123
+               
+    
+}
+
+
+###checked
+###
+POST  {{API_URL}}/fetch
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFhYWFAZ21haWwuY29tIiwiUG9zaXRpb24iOjAsImlkIjozLCJpYXQiOjE2NTc0MzE5ODIsImV4cCI6MTY1NzU3NTk4Mn0.RxOimoPGvPezwTnHH-WKpmQrPKqoZiX6nN_-rGb7BNU
+Content-Type: application/json
+
+{           
+               
+    
+}
+
+
+###checked
+###
+POST  {{API_URL}}/fetch/getbyid
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFhYWFAZ21haWwuY29tIiwiUG9zaXRpb24iOjAsImlkIjozLCJpYXQiOjE2NTc0MzE5ODIsImV4cCI6MTY1NzU3NTk4Mn0.RxOimoPGvPezwTnHH-WKpmQrPKqoZiX6nN_-rGb7BNU
+Content-Type: application/json
+
+{           
+            "id":1  
+    
+}
+
+
+
+###checked
+###
+
+POST  {{API_URL}}/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InR1YmVsaWdodGJveTA1NkBnbWFpbC5jb20iLCJQb3NpdGlvbiI6MiwiaWQiOjEsImlhdCI6MTY0NTE4NTMyNCwiZXhwIjoxNjQ1MzI5MzI0fQ.7Z1oZnLGcxRy30dQxzK6a-7YLgtZMtm2Q4EMjNyPCgg
+Content-Type: application/json
+
+{       
+
+     
+    "id":1,
+    "Name":"abbb",
+    "quantity":6,
+    "dis":"bbbb",
+    "rating":4,
+    "Price":12356
+
+    
+}
+
+
+

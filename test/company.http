@@ -1,0 +1,49 @@
+@API_URL = http://localhost:3001/company
+
+
+### checked 
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+{        
+    "email":"company1@gmail.com",
+    "cin":"9999", 
+    "status":"verified",
+    "name":"company1",  
+    "address":"xyz"
+}
+
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"1",
+    "cin":"1", 
+    "status":"1",
+    "name":"1",  
+    "address":"1"
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"company1@gmail.com",
+    "cin":"9999", 
+    "status":"verified",
+    "name":"company1",  
+    "address":"xyz"
+}
